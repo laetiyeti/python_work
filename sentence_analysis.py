@@ -15,10 +15,15 @@ sentence = """Le sénateur, dont il a été parlé plus haut, était un homme en
     """
 
 #Toutes les voyelles possibles
-#voyelles = "aeiouyAEIOUYéèâàuùû"
-
+voyelles = "aeiouyAEIOUYéèâàuùû"
 #Le compteur de a
 count_a = 0
+
+for letter in sentence:
+    if letter == "aeiouyAEIOUYéèâàuùû":
+        voyelles += 1
+
+print ("le texte contient " + str(count_a) + " voyelles")
 
 #On parcourt la phrase caractère par caractère
 #for letter in sentence:
